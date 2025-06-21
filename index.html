@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+
+
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left ">
+            <div class="home bg-grey m-1 rounded p-1">
+                <div class="logo "><img class="invert" src="logo.svg" alt=""> Spotify</div>
+                <ul>
+                    <li ><img class="invert" src="home.svg" alt="home">Home</li>
+                    <li ><img class="invert" src="search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey m-1 rounded p-1 ">
+                <div class="heading">
+                    <h2> Your Library
+                    </h2>
+
+                </div>
+                <div class="songlist">
+                    <ul>
+
+
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/">Legal</a></div>
+                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a></div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a></div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="right  bg-grey rounded p-1 ">
+            <div class="header">
+                <div class="nav"> <img class="invert" src="left-arrow.svg" alt="">
+                    <img class="invert" src="right-arrow.svg" alt="">
+                </div>
+                <div class="buttons">
+                    <button class="signupBtn">Sign Up</button>
+                    <button class="loginBtn">Log In</button>
+                </div>
+            </div>
+            <div class="spotifyPlay">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">
+                    <div data-folder="hi" class="card ">
+                        <div class="circle-container">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f0000000249a1ed33d2ca64e6a5d0e550" alt="">
+                        <h2>Happy Hits</h2>
+                        <p>"Good vibes only"</p>
+                    </div>
+                    <div data-folder="boom" class="card ">
+                        <div class="circle-container">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f000000029527413150cbd6d9b2a3785a" alt="">
+                        <h2>Calming Acoustics</h2>
+                        <p>"Live the present moment wisely and earnestly"</p>
+                    </div>
+                    <div data-folder="doom" class="card ">
+                        <div class="circle-container">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <img src="https://i.pinimg.com/736x/ba/77/85/ba7785573f3850bdaa80b1ea4d3b7795.jpg" alt="">
+                        <h2>Viral Hits</h2>
+                        <p>"Don't let it get you down"</p>
+                    </div>
+
+
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="barinfo">
+                    <div class="songinfo"></div>
+                    <div class="songbtn">
+                        <i id="prev" class="fa-solid fa-backward-step"></i>
+                        <i id="play" class="fa-solid fa-play"></i>
+                        <i id="next" class="fa-solid fa-forward-step"></i>
+                    </div>
+                    <div class="songtime">
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
